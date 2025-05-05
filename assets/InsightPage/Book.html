@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LocalLoop - Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Welcome to LocalLoop</h1>
+
+  <div class="sytle">
+
+  <!-- Booking Form Section -->
+  <div class="form-container">
+    <h2 class="title">Book Your Trip</h2>
+    <form action="reservation.php" method="post">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern="[A-Za-z\s]{3,20}" required>
+
+      <label for="email">Your E-mail</label>
+      <input type="email" id="email" name="visitor_email" placeholder="you@example.com" required>
+
+      <label for="location">Select Destination</label>
+      <select id="location" name="visitor_location" required>
+        <option value="">-- Choose a Location --</option>
+        <option value="darjeeling">Darjeeling</option>
+        <option value="puri">Puri</option>
+        <option value="digha">Digha</option>
+        <option value="purulia">Purulia</option>
+        <option value="santiniketan">Santiniketan</option>
+        <option value="sundarbans">Sundarbans</option>
+        <option value="bishnupur">Bishnupur</option>
+        <option value="murshidabad">Murshidabad</option>
+      </select>
+
+      <label for="date">Preferred Date</label>
+      <input type="date" id="date" name="visitor_date" required>
+
+      <button type="submit" >Book Now</button>
+    </form>
+  </div>
+
+  <!-- Login Form Section -->
+  <div class="form-container">
+    <h2 class="title">Login</h2>
+    <form action="login.php" method="post">
+      <label for="uname">Username</label>
+      <input type="text" id="uname" name="uname" placeholder="Enter Username" required>
+
+      <label for="psw">Password</label>
+      <input type="password" id="psw" name="psw" placeholder="Enter Password" required>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <div class="action-links">
+      <p>Don't have an account?</p>
+      <a href="register.html">Create Account</a>
+    </div>
+  </div>
+
+  <!-- Create Account Section -->
+  <div class="form-container" id="create-account-container" style="display:none;">
+    <h2 class="title">Create an Account</h2>
+    <form action="register.php" method="post">
+      <label for="new-username">Username</label>
+      <input type="text" id="new-username" name="new_username" placeholder="Choose a Username" required>
+
+      <label for="new-email">Email</label>
+      <input type="email" id="new-email" name="new_email" placeholder="you@example.com" required>
+
+      <label for="new-password">Password</label>
+      <input type="password" id="new-password" name="new_password" placeholder="Enter Password" required>
+
+      <label for="confirm-password">Confirm Password</label>
+      <input type="password" id="confirm-password" name="confirm_password" placeholder="Confirm Password" required>
+
+      <button type="submit">Create Account</button>
+    </form>
+
+    <div class="action-links">
+      <p>Already have an account?</p>
+      <a href="#" onclick="toggleForm()">Login Here</a>
+    </div>
+  </div>
+
+  <script>
+    // Toggle between Login and Create Account forms
+    function toggleForm() {
+      const loginForm = document.querySelector('.form-container:nth-child(2)');
+      const createAccountForm = document.getElementById('create-account-container');
+     
+      if (loginForm.style.display === "none") {
+        loginForm.style.display = "block";
+        createAccountForm.style.display = "none";
+      } else {
+        loginForm.style.display = "none";
+        createAccountForm.style.display = "block";
+      }
+    }
+  </script>
+</div>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LocalLoop - Explore Bengal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/assets/Icons/favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assets/Styling/MainStyle.css">
+</head>
+<body>
+
+  <!-- Shutter -->
+  <div class="shutter"></div>
+
+  <!-- Header -->
+  <header>
+    <h1>LocalLoop</h1>
+    <p>Your Gateway to Bengal's Hidden Gems</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <!-- <a href="/assets/InsightPage/1.html">Darjeeling</a> -->
+    <a href="/assets/InsightPage/2.html">Puri</a>
+    <a href="/assets/InsightPage/3.html">Digha</a>
+    <!-- <a href="/assets/InsightPage/4.html">Purulia</a> -->
+    <a href="/assets/InsightPage/5.html">Santiniketan</a>
+    <!-- <a href="/assets/InsightPage/6.html">Sundarbans</a> -->
+    <a href="/assets/InsightPage/7.html">Bishnupur</a>
+    <a href="/assets/InsightPage/8.html">Murshidabad</a>
+    <a href="/assets/InsightPage/9.html">Mandarmani</a>
+  </nav>
+  
+
+  <section class="h-screen flex items-center justify-center text-center px-6 bg-gradient-to-br from-green-100 via-green-200 to-green-300 relative text-green-900" style="height: 70vh;">
+    <div class="absolute inset-0 bg-white/30 backdrop-blur-[6px]"></div>
+    <div class="relative z-10 bg-white/20 backdrop-blur-md p-10 rounded-xl shadow-lg" data-aos="fade-up">
+      <h1 class="text-5xl md:text-6xl font-extrabold mb-4">Local Loop</h1>
+      <h1 class="text-5xl md:text-6xl font-extrabold mb-4">Welcome you all</h1>
+      <p class="text-lg md:text-xl mb-6 max-w-xl mx-auto">Book a Trip and Experience the difference!</p>
+      <a href="#gallery" class="bg-white/60 text-green-800 font-bold px-8 py-3 rounded-full shadow-md hover:bg-white/80 transition">Explore</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeiWZqdb7gTtDm-L3tr4z1qMrtAPz9P5chyowl3jxht_AhRAw/viewform?usp=preview" class="bg-white/60 text-green-800 font-bold px-8 py-3 rounded-full shadow-md hover:bg-white/80 transition">Book Now!</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-20 px-6 bg-green-50 text-center">
+    <h2 class="text-4xl font-bold mb-12 text-green-700" data-aos="fade-down">Why You'll Love It</h2>
+    <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <div class="bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-md border border-green-100" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="text-2xl font-semibold text-green-600 mb-2">Easy Booking</h3>
+        <p>Friendly Interface</p>
+      </div>
+      <div class="bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-md border border-green-100" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="text-2xl font-semibold text-green-600 mb-2">Point to Point Update</h3>
+        <p>Experience exciting, reliable and safe journey every time.</p>
+      </div>
+      <div class="bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-md border border-green-100" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="text-2xl font-semibold text-green-600 mb-2">Satisfaction First</h3>
+        <p>Places your comfort at top most—no hassle.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-20 px-6 bg-green-100/50 backdrop-blur-sm text-center overflow-x-auto">
+    <h2 class="text-4xl font-bold mb-10 text-green-700" data-aos="fade-up">SPOTS</h2>
+    <div class="grid-container">
+        <!-- Location Cards -->
+        <div class="place-card" id="darjeeling">
+          <img src="/assets/Picture/1.jpg" alt="Darjeeling">
+          <div class="place-info">
+            <h2>Darjeeling</h2>
+            <p><strong>Duration:</strong> 4 Days</p>
+            <p><strong>Cost per head:</strong> ₹8,000</p>
+            <p><strong>Highlights:</strong> Tea gardens, Tiger Hill sunrise, Toy train</p>
+            <a href="/assets/InsightPage/1.html" class="btn btn-primary btn-sm">Check Out More</a>
+        </div>
+    </div>
+    
+    <div class="place-card" id="puri">
+        <img src="/assets/Picture/2.jpg" alt="Puri">
+        <div class="place-info">
+            <h2>Puri</h2>
+            <p><strong>Duration:</strong> 3 Days</p>
+            <p><strong>Cost per head:</strong> ₹6,500</p>
+            <p><strong>Highlights:</strong> Jagannath Temple, Beach, Konark</p>
+            <a href="/assets/InsightPage/2.html" class="btn btn-primary btn-sm">Check Out More</a>
+        </div>
+    </div>
+    
+    <div class="place-card" id="digha">
+        <img src="/assets/Picture/3.jpg" alt="Digha">
+        <div class="place-info">
+            <h2>Digha</h2>
+            <p><strong>Duration:</strong> 2 Days</p>
+            <p><strong>Cost per head:</strong> ₹3,500</p>
+            <p><strong>Highlights:</strong> Sea beach, Marine aquarium</p>
+            <a href="/assets/InsightPage/3.html" class="btn btn-primary btn-sm">Check Out More</a>
+        </div>
+    </div>
+    
+    <div class="place-card" id="purulia">
+        <img src="/assets/Picture/4.jpg" alt="Purulia">
+        <div class="place-info">
+            <h2>Purulia</h2>
+            <p><strong>Duration:</strong> 3 Days</p>
+            <p><strong>Cost per head:</strong> ₹5,500</p>
+            <p><strong>Highlights:</strong> Ayodhya Hills, Trekking, Tribal Culture</p>
+            <a href="/assets/InsightPage/4.html" class="btn btn-primary btn-sm">Check Out More</a>
+        </div>
+    </div>
+    
+    <div class="place-card" id="santiniketan">
+        <img src="/assets/Picture/5.jpg" alt="Santiniketan">
+        <div class="place-info">
+            <h2>Santiniketan</h2>
+            <p><strong>Duration:</strong> 2 Days</p>
+            <p><strong>Cost per head:</strong> ₹4,000</p>
+            <p><strong>Highlights:</strong> Visva Bharati, Art & Culture, Poush Mela</p>
+            <a href="/assets/InsightPage/5.html" class="btn btn-primary btn-sm">Check Out More</a>
+        </div>
+    </div>
+    
+    <div class="place-card" id="sundarbans">
+        <img src="/assets/Picture/6.jpg" alt="Sundarbans">
+        <div class="place-info">
+            <h2>Sundarbans</h2>
+            <p><strong>Duration:</strong> 3 Days</p>
+            <p><strong>Cost per head:</strong> ₹6,000</p>
+            <p><strong>Highlights:</strong> Mangrove Forest, Tigers, Boat safari</p>
+            <a href="/assets/InsightPage/6.html" class="btn btn-primary btn-sm">Check Out More</a>
+        </div>
+    </div>
+    
+    <div class="place-card" id="bishnupur">
+        <img src="/assets/Picture/7.jpg" alt="Bishnupur">
+        <div class="place-info">
+            <h2>Bishnupur</h2>
+            <p><strong>Duration:</strong> 2 Days</p>
+            <p><strong>Cost per head:</strong> ₹4,500</p>
+            <p><strong>Highlights:</strong> Terracotta Temples, Baluchari sarees</p>
+            <a href="/assets/InsightPage/7.html" class="btn btn-primary btn-sm">Check Out More</a>
+        </div>
+    </div>
+    
+    <div class="place-card" id="murshidabad">
+        <img src="/assets/Picture/8.jpg" alt="Murshidabad">
+        <div class="place-info">
+            <h2>Murshidabad</h2>
+            <p><strong>Duration:</strong> 2 Days</p>
+            <p><strong>Cost per head:</strong> ₹5,000</p>
+            <p><strong>Highlights:</strong> Hazarduari Palace, Nawabi history</p>
+            <a href="/assets/InsightPage/8.html" class="btn btn-primary btn-sm">Check Out More</a>
+            </div>
+          </div>
+
+          <div class="place-card" id="mandarmani">
+        <img src="/assets/Picture/9b.jpg" alt="mandarmani">
+        <div class="place-info">
+            <h2>Mandarmani</h2>
+            <p><strong>Duration:</strong> 3 Days</p>
+            <p><strong>Cost per head:</strong> ₹6,000</p>
+            <p><strong>Highlights:</strong>  Sea beaches, Beach Driving, and water sports</p>
+            <a href="/assets/InsightPage/9.html" class="btn btn-primary btn-sm">Check Out More</a>
+            </div>
+          </div>
+    
+        
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <h3>Contact Us</h3>
+    <p>Email: info.localloop@gmail.com</p>
+    <p>Phone: +91 6289171792</p>
+    <p class="contact">Follow us on Facebook: @locallooptravel</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    window.addEventListener('scroll', function() {
+      let shutter = document.querySelector('.shutter');
+      let scrollPosition = window.scrollY;
+      shutter.style.transform = 'translateY(' + (scrollPosition * 0.3) + 'px)';
+    });
+  </script>
+</body>
+</html>

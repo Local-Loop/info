@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #e0f7f5;
+    color: #043927;
+    padding: 2rem;
+  }
+
+  
+
+  h1 {
+    color: #00796b;
+    font-size: 2.5rem;
+  }
+
+  .details-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+  }
+
+  .description, .itinerary, .route-info, .tips, .facilities, .pricing, .services {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    color: #00796b;
+    margin-bottom: 1rem;
+  }
+
+  .cta-button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #00796b;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .cta-button:hover {
+    background-color: #004d40;
+  }
+
+  .itinerary ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .itinerary li {
+    margin-bottom: 1rem;
+  }
+
+  .route-info table, .facilities table, .pricing table, .services table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+
+  .route-info th, .facilities th, .pricing th, .services th {
+    text-align: left;
+    background-color: #00796b;
+    color: white;
+    padding: 10px;
+  }
+
+  .route-info td, .facilities td, .pricing td, .services td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+
+  .tips ul {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+
+
